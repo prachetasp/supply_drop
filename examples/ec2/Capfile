@@ -6,7 +6,7 @@ ssh_options[:user_known_hosts_file] = []
 ssh_options[:config] = false
 set :user, 'ubuntu'
 
-require_relative '../../lib/capistrano/supply_drop'
+require 'capistrano/supply_drop'
 
 server 'your ec2 server', :web, :app, :db
 

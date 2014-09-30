@@ -15,7 +15,7 @@ ssh_options[:config] = false
 set :user, 'vagrant'
 
 
-require_relative '../../lib/capistrano/supply_drop'
+require_relative 'capistrano/supply_drop'
 
 # We don't have the gems installed, so we need to tell ruby where to find the code
 # for puppet, and facter
